@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>jQuery-glowing Example</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1>Live demos of <a href="https://github.com/cezar-carneiro/jquery-glowing">jQuery-glowing</a></h1>
+            <hr>
+            <div class="col-lg-3">
+				<button id="red-button" data-toggle="dropdown" class="btn btn-danger" type="button">Example</button>
+			</div>
+			<div class="col-lg-3">
+				<button id="green-button" data-toggle="dropdown" class="btn btn-success" type="button">Example</button>
+			</div>
+			<div class="col-lg-3">
+				<button id="blue-button" data-toggle="dropdown" class="btn btn-info" type="button">Example</button>
+			</div>
+			<div class="col-lg-3">
+				<button id="yellow-button" data-toggle="dropdown" class="btn btn-warning" type="button">Example</button>
+			</div>
+            <hr>
+        </div>
+    </div>
+    <footer class="footer" style="bottom: 0px; position: fixed;">
+		<div class="row">
+			<div class="col-lg-12">
+	        	<p><a href="https://github.com/cezar-carneiro/jquery-glowing">jQuery-glowing </a> 2014 | visit <a href="http://cezar-carneiro.github.io">cezar-carneiro.github.io</a></p>
+	        </div>
+	    </div>
+	</footer>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="jquery-glowing.js"></script>
+<script type="text/javascript">
+	(function(){
+		$('#red-button').glow({
+			pulses: 10,
+		 	pulseDuration: 1000,
+		 	verticalLength: 0,
+		 	horizontalLength: 0,
+		 	blurSize: 30,
+		 	spreadSize: 20,
+		 	color: '#d9534f'
+		});
+
+		$('#green-button').glow({
+			pulses: 10,
+		 	pulseDuration: 1000,
+		 	verticalLength: 0,
+		 	horizontalLength: 0,
+		 	blurSize: 30,
+		 	spreadSize: 20,
+		 	color: '#5cb85c'
+		});
+
+		$('#blue-button').glow({
+			pulses: 10,
+		 	pulseDuration: 1000,
+		 	verticalLength: 0,
+		 	horizontalLength: 0,
+		 	blurSize: 30,
+		 	spreadSize: 20,
+		 	color: '#5bc0de'
+		});
+
+		$('#yellow-button').glow({
+			pulses: 10,
+		 	pulseDuration: 1000,
+		 	verticalLength: 0,
+		 	horizontalLength: 0,
+		 	blurSize: 30,
+		 	spreadSize: 20,
+		 	color: '#f0ad4e'
+		});
+	})();
+</script>
+</body>
+</html>
